@@ -67,3 +67,13 @@ After a small amount of time the Docker Swarm Cluster is up and running. In the 
 $ docker-machine ls | grep " pwd " | awk '{print $1}' | xargs docker-machine rm -f
 ```
 
+# Deploy nginx service with 5 replicas
+Now we can deploy nginx with 5 replicas and bind them to the workers.
+
+```
+$ docker service create \
+    --name nginx \
+    --replicas 5 \
+    --publish 8081:80 \
+    nginx
+```
