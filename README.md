@@ -68,12 +68,14 @@ $ docker-machine ls | grep " pwd " | awk '{print $1}' | xargs docker-machine rm 
 ```
 
 # Deploy nginx service with 5 replicas
-Now we can deploy nginx with 5 replicas and bind them to the workers.
+Now we can deploy nginx with 5 replicas and bind them to the workers. Make sure you switch to a manager before creating the service.
 
 ```
+$ eval $(docker-machine env manager1)
 $ docker service create \
     --name nginx \
     --replicas 5 \
     --publish 8081:80 \
+    --constraint node.role==worker \
     nginx
 ```
