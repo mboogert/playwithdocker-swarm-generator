@@ -13,7 +13,7 @@ This scripts depends on docker-machine and the corresponding PWD driver.
 * Get a copy of the playwithdocker-swarm-generator.sh script.
 * Initialize your playground. Goto http://play-with-docker.com and finish the captcha.
 * Copy the url to use with docker-machine.
-* Run the script and make sure to enter the needed arguments, PWD_URL MANAGER_COUNT and WORKER_COUNTER.
+* Run the script and make sure you enter the mandatory arguments, PWD_URL MANAGER_COUNT and WORKER_COUNTER.
 ```
 $ ./playwithdocker-swarm-generator.sh http://host1.labs.play-with-docker.com/p/deacacea-e02a-4b0d-9d09-721110340e9c 3 3
 
