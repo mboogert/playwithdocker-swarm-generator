@@ -1,6 +1,17 @@
 #!/bin/bash
 
-## Set the PWD_URL variable as seen at "http://labs.play-with-docker.com" after confirming you're not a robot.
+## Set the PWD_URL variable as seen at "http://labs.play-with-docker.com" after
+## confirming you're not a robot. Also give the wanted amount of managers and
+## workers.
+
+if [ ! $# -eq 3 ]
+then
+	echo ""
+	echo "[ERROR] Please enter the correct amount of arguments!!"
+	echo ""
+	exit 1
+fi
+
 export PWD_URL="$1"
 export MANAGER_AMOUNT="$2"
 export WORKER_AMOUNT="$3"
