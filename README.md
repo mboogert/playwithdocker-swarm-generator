@@ -85,6 +85,6 @@ o0e9pv8ps85cn3tzhhpwomvgf
 ```
 # Remove all docker nodes at once in the current playground
 ```
-$ docker-machine ls | tail -n+2 | awk '{print $1}' | xargs docker-machine rm -f
+$ docker-machine ls | grep " pwd " | awk '{print $1}' | xargs docker-machine rm -f
 ```
 
