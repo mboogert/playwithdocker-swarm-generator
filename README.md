@@ -1,7 +1,7 @@
 # playwithdocker-swarm-generator
-Shell script which generates a docker swarm in the Docker Playground
+Shell script which generates a docker swarm in the Docker Playground.
 
-This script generates a Docker Swarm running in the Docker Playground. To initialize your playgroudn goto play-with-docker.com and verify you're not a robot.
+This script generates a Docker Swarm running in the Docker Playground. To initialize your playground goto play-with-docker.com and verify you're not a robot.
 
 # Prerequisites
 This scripts depends on docker-machine and the corresponding PWD driver.
